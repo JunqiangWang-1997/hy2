@@ -11,14 +11,14 @@ from urllib.parse import quote
 
 # --- 配置项 ---
 HYSTERIA_VERSION = "v2.6.3"  # 您可以修改为希望安装的特定版本
-BASE_DIR = "/home/container"
+BASE_DIR = "./"
 INSTALL_PATH = os.path.join(BASE_DIR, "hysteria")
 CONFIG_DIR = os.path.join(BASE_DIR, "hy2")
 CONFIG_PATH = os.path.join(CONFIG_DIR, "config.json")
 
 # --- 硬编码配置（设置后将跳过交互输入） ---
-PRESET_PORT = 2170  # 例如: 2170
-PRESET_SNI = "node1.lunes.host"  # 例如: "node1.lunes.host"
+PRESET_PORT = 443  # 例如: 443
+PRESET_SNI = ""  # 例如: "node1.lunes.host"
 
 REQUIRED_COMMANDS = {
     "openssl": "请先安装 openssl（例如：apt install openssl）"
